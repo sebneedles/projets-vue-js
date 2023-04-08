@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main > section.items h4 {
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+main > section.items {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  max-width: 500px;
+  min-width: 300px;
+  justify-content: center;
+  border-radius: 10px 0 10px 0;
+  background-color: rgb(255, 225, 0);
+}
+
+section.items .product {
+  border: 3px solid lightgrey;
+  margin: 6px;
+  flex: 0 0 calc(33.333% - 24px);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+  background-color: white;
+}
+
+section.items .product:hover {
+  border: 3px solid darkgray;
+}
+
+section.items .product.selected {
+  border: 3px solid #42b883;
+}
+
+section.items .photo img {
+  max-width: 90px;
+}
+
+section.items .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+section.items .description .price {
+  font-weight: bold;
+  margin: 4px auto;
+}
+
+section.items .description .quantity-area {
+  margin: 8px auto;
+  height: 14px;
+}
+
+section.items .description .quantity-area button {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+section.items .description .quantity-area .quantity {
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+section.summary {
+  background-color: #42b883;
+  padding: 20px;
+  min-height: 200px;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+}
+
+section.summary strong {
+  color: white;
+}
+
+section.summary table {
+  width: 100%;
+  padding-top: 12px;
+  font-size: 12px;
+  margin: auto;
+  color: white;
+}
+
+section.summary table tbody tr:last-of-type th {
+  border-top: 1px solid white;
+  padding-top: 14px;
+  font-size: 16px;
+}
